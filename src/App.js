@@ -1,10 +1,16 @@
 import Ttable from "./components/Ttable";
+import classes from "./index.module.css";
+
 
 function App() {
   return (
-    <div>
-       <h1>Premier League</h1>
-       <Ttable/>
+    <div className={classes.center}>
+      <div>
+        <h1>Premier League</h1>
+      </div>
+      <div>
+        <Ttable />
+      </div>
     </div>
   );
 }

@@ -1,3 +1,4 @@
+import classes from "./Ttable.module.css"
 export default function Ttable()
 {
     const data = [
@@ -24,10 +25,10 @@ export default function Ttable()
       ]
     return(
      <div>
-        <table>
-         <tread>
-           <tr>
-             <th>place</th>
+        <table className={classes.main}>
+         <tread >
+           <tr className={classes.header}>
+             <th>Place</th>
              <th>Team Name</th>
              <th>Played</th>
              <th>Winning</th>

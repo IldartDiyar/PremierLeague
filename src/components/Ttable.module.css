@@ -1,0 +1,13 @@
+.main {
+    border: 1px solid black;
+    text-align: center; 
+    vertical-align: middle;
+}
+.header {
+background: #000000;
+color: white;
+padding: 10px 20px;
+}
+td {
+background: #618fbb;
+}
