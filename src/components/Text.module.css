@@ -1,0 +1,17 @@
+.center {
+    border: 1px solid black;
+    justify-items: center;
+    vertical-align: middle;
+    justify-content: center;
+    display: grid;
+  }
+.red {
+    color:red;
+}
+.img{
+    width: 500px;
+    width: 450px;
+}
+a{
+    color:brown;
+}

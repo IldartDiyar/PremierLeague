@@ -34,8 +34,7 @@ export default function Ttable()
              <th>Winning</th>
              <th>Points</th>
            </tr>
-           <tbody>
-              
+           <tbody> 
               {data.map((val, key) => {
           return (
             <tr key={key}>
