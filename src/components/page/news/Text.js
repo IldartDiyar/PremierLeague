@@ -18,7 +18,7 @@ export default function Text() {
         ownership had fallen from 73.6 per cent, an all-time high, to 65.4,
         resulting in a price drop.
       </p>
-      <a classname={classes.premier}href="https://www.premierleague.com/news/2425071">©Premier League</a>
+      <a className={classes.premier}href="https://www.premierleague.com/news/2425071">©Premier League</a>
     </div>
   );
 }
