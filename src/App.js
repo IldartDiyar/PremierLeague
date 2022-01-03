@@ -1,25 +1,19 @@
-import Ttable from "./components/Ttable";
-import Text from "./components/Text";
-import classes from "./index.module.css";
-
+import { Route, Routes, Link } from "react-router-dom";
+import Navbar from "./components/navbar";
+import Ttable from "./components/page/table/Ttable";
+import Text from "./components/page/news/Text";
+import Main from "./components/page/main/Main";
 
 function App() {
   return (
-    <div className={classes.center}>
     <div>
-      <div>
-        <h1>Premier League Table</h1>
-      </div>
-      <div>
-        <Ttable />
-      </div>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Main/>}/>
+        <Route path="/table" element={<Ttable />} />
+        <Route path="/text" element={<Text />} />
+      </Routes>
     </div>
-    <div>
-      <h2>Latest News</h2>
-    <Text/>
-    </div>
-    </div>
-
   );
 }
 

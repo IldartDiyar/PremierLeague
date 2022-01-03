@@ -1,5 +1,5 @@
 import classes from "./Text.module.css";
-import Salah from './img/Salah.jpg'
+import Salah from '../../img/Salah.jpg'
 export default function Text() {
   return (
     <div className={classes.center}>
