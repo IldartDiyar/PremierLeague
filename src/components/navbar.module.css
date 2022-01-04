@@ -30,17 +30,4 @@
     font-size: 1.5rem;
     color: #ffffff;
   }
-  
-  .header a:hover,
-  .header a:active,
-  .header a.active {
-    color: white;
-  }
-  
-  .badge {
-    background-color: #cc2062;
-    color: white;
-    border-radius: 12px;
-    padding: 0 1rem;
-    margin-left: 0.5rem;
-  }
+
