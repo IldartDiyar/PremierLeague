@@ -1,5 +1,6 @@
 import classes from "./Ttable.module.css"
 import { useState, useEffect } from "react"
+import { Container } from "react-bootstrap"
 export default function Ttable() {
   const [data, setData] = useState([])
   useEffect(() => {
@@ -21,7 +22,7 @@ export default function Ttable() {
     setData(info)
   }
   return (
-    <div>
+    <div className={Container}> 
       
       <table className={classes.main}>
       <strong>Table of Premier legue</strong>

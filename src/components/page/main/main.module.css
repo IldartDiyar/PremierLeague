@@ -1,18 +1,18 @@
 .main {
-    justify-items: center;
-    display: grid;
+  justify-items: center;
+  display: grid;
 }
 
 .main strong {
-    font-size: xx-large;
+  font-size: xx-large;
 }
 
 .h1 {
-    clear: right;
-    font-size: 100%;
+  clear: right;
+  font-size: 100%;
 }
 
 .video {
-    width: 80%;
-    height: 600px;
+  width: 80%;
+  height: 600px;
 }

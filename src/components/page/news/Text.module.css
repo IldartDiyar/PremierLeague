@@ -1,17 +1,26 @@
-.center {
-    border: 1px solid black;
-    justify-items: center;
-    vertical-align: middle;
-    justify-content: center;
+.all {
+    padding-left: 15%;
+    padding-right: 15%;
+    text-align: center;
+}
+.newses {
     display: grid;
+    justify-items: center;
+    padding-left: 5%;
+    padding-right: 5%;
+    border: 3px #37003c;
+    border-style:double;
   }
 .red {
     color:red;
 }
-.img{
+img{
     width: 500px;
     width: 450px;
 }
 a{
-    color:brown;
+    color:rgb(55, 0, 60);
 }
+p {
+    text-align: justify;
+  }
