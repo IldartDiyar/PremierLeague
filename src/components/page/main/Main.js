@@ -4,7 +4,9 @@ import Slideshow from "./Slideshow";
 export default function Main() {
   return (
     <div className={Container}>
-      <Slideshow />
+      <div className={classes.main}>
+        <Slideshow />
+      </div>
     </div>
   );
 }
