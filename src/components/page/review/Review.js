@@ -1,9 +1,11 @@
 import { FaStar } from "react-icons/fa";
 import { useState } from "react/cjs/react.development";
 import classes from "./review.module.css";
-import { Button, Container } from "react-bootstrap";
+import { Button, Container, Form } from "react-bootstrap";
+
 export default function Review() {
   const createArray = (length) => [...Array(length)];
+  
   function Star({ selected = false, OnSelect }) {
     return <FaStar color={selected ? "red" : "gray"} onClick={OnSelect} />;
   }
@@ -25,29 +27,26 @@ export default function Review() {
   }
 
   return (
-    <div className={Container}>
-      <div className={classes.center}>
-        <form>
-          <div>
-            <label>Name: </label>
-            <br />
-            <input type="text" />
-          </div>
-          <div>
-            <label>Rating</label>
-            <br />
-            <StarRating totalStars={10} />
-          </div>
-          <div>
-            <labe>Text</labe>
-            <br />
-            <textarea />
-          </div>
-          <div>
-            <Button variant="primary">Primary</Button>
-          </div>
-        </form>
-      </div>
+    <div className="form-container">
+      <Form>
+        <Form.Group className="mb-3">
+          <Form.Label>Name</Form.Label>
+          <Form.Control type="text" placeholder="Enter name" />
+        </Form.Group>
+        
+        <Form.Group className="mb-3">
+          <Form.Label>Password</Form.Label>
+          <Form.Control as="textarea" rows={3} />
+        </Form.Group>
+
+        <Form.Group className="mb-3">
+        <StarRating totalStars={5} />
+        </Form.Group>
+
+        <Button variant="primary" type="submit">
+          Submit
+        </Button>
+      </Form>
     </div>
   );
 }

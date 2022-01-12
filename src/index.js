@@ -8,7 +8,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 ReactDOM.render(
   <BrowserRouter>
-    <App />
+    <App size="lg"  />
   </BrowserRouter>,
   document.getElementById('root')
 );

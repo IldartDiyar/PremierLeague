@@ -1,21 +1,5 @@
-.all {
-    padding-left: 15%;
-    padding-right: 15%;
-}
-.main {
-    border: 3px #37003c;
-    border-style:double;
+.App {
     text-align: center;
-    justify-content: center;
-    display: grid;
-}
-
-.header {
-    background: #000000;
-    color: white;
-    padding: 10px 20px;
-}
-
-td {
-    background: #618fbb;
-}
+    margin-left: 20%;
+    margin-right: 20%;
+  }

@@ -2,29 +2,39 @@ import { Carousel } from "react-bootstrap";
 import salah from "../../img/Salah.jpg";
 import klopp from "../../img/klopp.jpg";
 import epl from "../../img/epl.jpg";
+const data = [
+  {
+    header: "Salah",
+    image: salah,
+    text: "Best player"
+  },
+  {
+    header: "Klopp",
+    image: klopp,
+    text: "Best coach"
+  },
+  {
+    header: "Epl",
+    image: epl,
+    text: "GG"
+  },
+];
 
 export default function Slideshow() {
   return (
     <div>
       <Carousel>
-        <Carousel.Item>
-          <img  src={salah} alt="Salah" />
-          <Carousel.Caption>
-            <h3>Salah</h3>
-          </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item>
-          <img src={klopp} alt="Salah" />
-          <Carousel.Caption>
-            <h3>Klopp</h3>
-          </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item>
-          <img  src={epl} alt="Salah" />
-          <Carousel.Caption>
-            <h3>Premier Legue</h3>
-          </Carousel.Caption>
-        </Carousel.Item>
+        {data.map((slide, i) => {
+          return (
+            <Carousel.Item>
+              <img
+                className="w-500"
+                src={slide.image}
+                alt={slide.header}
+              />
+            </Carousel.Item>
+          );
+        })}
       </Carousel>
     </div>
   );

@@ -3,10 +3,8 @@ import classes from "./main.module.css";
 import Slideshow from "./Slideshow";
 export default function Main() {
   return (
-    <div className={Container}>
-      <div className={classes.main}>
+    <div className="d-flex justify-content-center">
         <Slideshow />
-      </div>
     </div>
   );
 }

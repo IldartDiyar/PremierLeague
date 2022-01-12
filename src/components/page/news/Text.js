@@ -4,8 +4,8 @@ import Newnews from "./Newnews";
 import { Container } from "react-bootstrap";
 export default function Text() {
   return (
-    <div className={Container}>
-      <h1>News</h1>
+    <div>
+      <h1 className="text-center mt-4 mb-4">News</h1>
       {news.map((newsDetail, index) => {
         return (
           <Newnews
@@ -16,13 +16,12 @@ export default function Text() {
         );
       })}
 
-      <a
-        className={classes.premier}
+      <p
+        className="text-center mt-4 mb-4"
         href="https://www.premierleague.com/news/2425071"
       >
         ©Premier League
-      </a>
+      </p>
     </div>
   );
 }
-
