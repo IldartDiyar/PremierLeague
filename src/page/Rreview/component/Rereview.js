@@ -1,7 +1,8 @@
 import { useState } from "react/cjs/react.development";
 import { FaStar } from "react-icons/fa";
-import { Button, Form } from "react-bootstrap";
+import { Button, Form, Alert } from "react-bootstrap";
 export default function Review() {
+  const [output, setOutput] = useState(false);
   const createArray = (length) => [...Array(length)];
 
   function Star({ selected = false, OnSelect }) {
@@ -23,11 +24,19 @@ export default function Review() {
       </div>
     );
   }
+
+  if (output) {
+    return (
+      <Alert variant="success" className="text-center" onClose={() => setOutput(false)} dismissible>
+        Thank you for your review
+      </Alert>
+    );
+  }
   return (
     <div className="container">
       <h1>Share your thougth about premier legue</h1>
       <div className="form-container">
-        <Form >
+        <Form>
           <Form.Group className="mb-3">
             <Form.Label>Name</Form.Label>
             <Form.Control type="text" placeholder="Enter name" />
@@ -42,7 +51,11 @@ export default function Review() {
             <StarRating totalStars={5} />
           </Form.Group>
 
-          <Button variant="primary" type="submit">
+          <Button
+            variant="primary"
+            type="submit"
+            onClick={() => setOutput(true)}
+          >
             Submit
           </Button>
         </Form>

@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import BTable from "react-bootstrap/Table";
+import { Badge } from "react-bootstrap";
 export default function Ttable() {
   const [data, setData] = useState([]);
   useEffect(() => {
@@ -23,6 +24,7 @@ export default function Ttable() {
   return (
     <div className="container">
       <h1>Premier Legue stats</h1>
+      <h1>Leader is: <Badge bg="secondary">Manchester City</Badge></h1>
       <BTable striped variant="light">
         <tbody>
           <tr>

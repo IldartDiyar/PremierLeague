@@ -10,21 +10,21 @@ class Carousell extends React.Component {
           <Carousel.Item style={{'height': '700px'}}>
             <img
               alt="900x500"
-              src={require('../img/Lion.png')}
+              src={require('./img/MC.jpg')}
               className={styles.carouselImage}
             />
           </Carousel.Item>
           <Carousel.Item style={{'height': '700px'}}>
             <img
               alt="900x500"
-              src={require('../img/Cup.jpg')}
+              src={require('./img/Cup.jpg')}
               className={styles.carouselImage}
             />
           </Carousel.Item >
           <Carousel.Item style={{'height': '700px'}}>
             <img
               alt="900x500"
-              src={require('../img/champion.webp')}
+              src={require('./img/champion.webp')}
               className={styles.carouselImage}
             />
             

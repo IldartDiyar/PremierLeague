@@ -3,7 +3,7 @@ import { Card } from "react-bootstrap";
 
 export default function Footer() {
   return (
-    <div className="text-center mt-4 mb-4">
+    <div className="text-center">
       <div className="footer-content">
         <Card.Footer className="text-muted">
           <p>made with ❤ Ildartov Diyar.</p>

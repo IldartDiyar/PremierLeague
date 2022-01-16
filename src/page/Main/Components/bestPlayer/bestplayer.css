@@ -1,0 +1,12 @@
+.bg {
+  background-color: rgb(146, 32, 156);
+  height: 450px;
+}
+.align {
+    margin-left: auto;
+    margin-right: auto;
+}
+col{
+    padding-left: auto;
+    padding-right: auto;
+}
