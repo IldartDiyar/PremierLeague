@@ -1,5 +1,6 @@
 import { FaStar } from "react-icons/fa";
 import { Card } from "react-bootstrap";
+import React from "react";
 export default function Cardos(props) {
   const createArray = (length) => [...Array(length)];
   function DrawStar({ stars }) {

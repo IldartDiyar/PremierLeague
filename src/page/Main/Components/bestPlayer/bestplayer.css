@@ -11,9 +11,13 @@ col{
   justify-content: center;
 }
 .imgs{
-  height: 70%;
-  width: 75%;
+  height: 50%;
+
   margin-left: auto;
   margin-right: auto;
-  border-radius: 100%;
+  border-radius: 60%;
+}
+Card{
+  height: 170px;
+
 }

@@ -1,42 +1,37 @@
 import React from "react";
+import data from "./data.json";
+
 import "./bestplayer.css";
 import { Card, Row, Container, Col } from "react-bootstrap";
 
 export default function Bestplayer() {
   return (
     <div className="bg">
-      <Container className="align">
+      <h1 className="text-center">Best Player</h1>
+      <Container fluid="md">
         <Row>
-          <div className="text-center">
-            <h1>Best Player</h1>
-          </div>
-          <Col>
-            <Card style={{ width: "18rem" }}>
-            <Card.Header className="text-center">Liverpool</Card.Header>
-              <Card.Img variant="top" src=""/>
+          <Col className="d-flex justify-content-center">
+            <Card style={{ width: "18rem" }} bg="dark" text="light">
+              <Card.Header className="text-center">Liverpool</Card.Header>
+              <Card.Img
+                variant="top"
+                className="imgs"
+                src="http://t1.gstatic.com/licensed-image?q=tbn:ANd9GcRjYYL6HNd6tdsEFOdh2jashcKmEVGYt7kEGxbgqN1E0kYsXCJvP-nuV7GLz0Q7"
+              />
               <Card.Body>
-                <Card.Title>Mohamed Salah</Card.Title>
-                <Card.Text>Goal+pas:25 Goal:16 pas:9 Average:1.25</Card.Text>
-              </Card.Body>
-            </Card>
-          </Col>
-          <Col>
-            <Card style={{ width: "18rem" }}>
-              <Card.Img variant="top" src="" />
-              <Card.Header className="text-center">West Ham</Card.Header>
-              <Card.Body>
-                <Card.Title>Michail Gregory Antonio</Card.Title>
-                <Card.Text>Goal+pas:25 Goal:16 pas:9 Average:1.25</Card.Text>
-              </Card.Body>
-            </Card>
-          </Col>
-          <Col>
-            <Card style={{ width: "18rem" }}>
-              <Card.Img variant="top" src="" />
-              <Card.Header className="text-center">Wotfard</Card.Header>
-              <Card.Body>
-                <Card.Title>Bonaventure Dennis</Card.Title>
-                <Card.Text>Goal+pas:25 Goal:16 pas:9 Average:1.25</Card.Text>
+                <Card.Title className="text-center"></Card.Title>
+                <Card.Text>
+                  <Container >
+                    <Row >
+                      <Col className="text-center">Goal 16</Col>
+                      <Col className="text-center">Pas 9</Col>
+                    </Row>
+                    <Row >
+                      <Col className="text-center">Goal&pas 25</Col>
+                      <Col className="text-center">Average 1.2</Col>
+                    </Row>
+                  </Container>
+                </Card.Text>
               </Card.Body>
             </Card>
           </Col>
