@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "club": "Liverpool",
+        "phtLink": "https://cdn.footboom.net/img/stats/players/26772.png",
+        "Name": "Mohamed Salah",
+        "Goal": 16,
+        "Pas": 9,
+        "GoaPa": 25,
+        "Ave": 1.2
+    },
+    {
+        "id": 2,
+        "club": "West Ham",
+        "phtLink": "https://cdn.footboom.net/img/stats/players/44824.png",
+        "Name" : "Michail Antonio",
+        "Goal": 8,
+        "Pas": 6,
+        "GoaPa": 14,
+        "Ave": 0.6
+    },
+    {
+        "id": 2,
+        "club": "West Ham",
+        "phtLink": "https://cdn.footboom.net/img/stats/players/53327.png",
+        "Name" : "Emmanuel Bonaventure Dennis",
+        "Goal": 8,
+        "Pas": 5,
+        "GoaPa": 13,
+        "Ave": 0.7
+    }
+]

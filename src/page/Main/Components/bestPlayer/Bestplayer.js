@@ -1,44 +1,39 @@
 import React from "react";
+import data from "./data.json";
+
 import "./bestplayer.css";
 import { Card, Row, Container, Col } from "react-bootstrap";
 
 export default function Bestplayer() {
   return (
     <div className="bg">
-      <Container className="align">
+      <h1 className="text-center">Best Player</h1>
+      <Container fluid="md">
         <Row>
-          <div className="text-center">
-            <h1>Best Player</h1>
-          </div>
-          <Col>
-            <Card style={{ width: "18rem" }}>
-            <Card.Header className="text-center">Liverpool</Card.Header>
-              <Card.Img variant="top" src=""/>
-              <Card.Body>
-                <Card.Title>Mohamed Salah</Card.Title>
-                <Card.Text>Goal+pas:25 Goal:16 pas:9 Average:1.25</Card.Text>
-              </Card.Body>
-            </Card>
-          </Col>
-          <Col>
-            <Card style={{ width: "18rem" }}>
-              <Card.Img variant="top" src="" />
-              <Card.Header className="text-center">West Ham</Card.Header>
-              <Card.Body>
-                <Card.Title>Michail Gregory Antonio</Card.Title>
-                <Card.Text>Goal+pas:25 Goal:16 pas:9 Average:1.25</Card.Text>
-              </Card.Body>
-            </Card>
-          </Col>
-          <Col>
-            <Card style={{ width: "18rem" }}>
-              <Card.Img variant="top" src="" />
-              <Card.Header className="text-center">Wotfard</Card.Header>
-              <Card.Body>
-                <Card.Title>Bonaventure Dennis</Card.Title>
-                <Card.Text>Goal+pas:25 Goal:16 pas:9 Average:1.25</Card.Text>
-              </Card.Body>
-            </Card>
+          <Col className="d-flex justify-content-center">
+            {data.map((data, index) => {
+              return (
+                <Card style={{ width: "18rem" }} bg="dark" text="light">
+                  <Card.Header className="text-center">{data.club}</Card.Header>
+                  <Card.Img variant="top" className="imgs" src={data.phtLink} />
+                  <Card.Body>
+                    <Card.Title className="text-center"></Card.Title>
+                    <Card.Text>
+                      <Container>
+                        <Row>
+                          <Col>Goal {data.Goal}</Col>
+                          <Col>Pas {data.Pas}</Col>
+                        </Row>
+                        <Row>
+                          <Col>Goal+pas {data.GoaPa}</Col>
+                          <Col>Average {data.Ave}</Col>
+                        </Row>
+                      </Container>
+                    </Card.Text>
+                  </Card.Body>
+                </Card>
+              );
+            })}
           </Col>
         </Row>
       </Container>

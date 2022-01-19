@@ -7,27 +7,26 @@ class Carousell extends React.Component {
     return (
       <Row>
         <Carousel>
-          <Carousel.Item style={{'height': '700px'}}>
+          <Carousel.Item style={{ height: "700px" }}>
             <img
-              alt="900x500"
-              src={require('./img/MC.jpg')}
-              className={styles.carouselImage}
+              alt="Manchester City"
+              src={require("./img/MC.jpg")}
+              className="d-block w-100"
             />
           </Carousel.Item>
-          <Carousel.Item style={{'height': '700px'}}>
+          <Carousel.Item style={{ height: "700px" }}>
             <img
-              alt="900x500"
-              src={require('./img/Cup.jpg')}
-              className={styles.carouselImage}
+              alt="Cup"
+              src={require("./img/Cup.jpg")}
+              className="d-block w-100"
             />
-          </Carousel.Item >
-          <Carousel.Item style={{'height': '700px'}}>
+          </Carousel.Item>
+          <Carousel.Item style={{ height: "700px" }}>
             <img
-              alt="900x500"
-              src={require('./img/champion.webp')}
-              className={styles.carouselImage}
+              alt="Champion"
+              src={require("./img/champion.webp")}
+              className="d-block w-100"
             />
-            
           </Carousel.Item>
         </Carousel>
       </Row>
