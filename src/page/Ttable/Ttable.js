@@ -24,10 +24,12 @@ export default function Ttable() {
   return (
     <div className="container">
       <h1>Premier Legue stats</h1>
-      <h1>Leader is: <Badge bg="secondary">Manchester City</Badge></h1>
+      <h1>
+        Leader is: <Badge bg="secondary">Manchester City</Badge>
+      </h1>
       <BTable striped variant="light">
         <tbody>
-          <tr>
+          <tr className="text-center">
             <td>Place</td>
             <td>Team Name</td>
             <td>Played</td>
@@ -36,7 +38,7 @@ export default function Ttable() {
           </tr>
           {data.map((stand, key) => {
             return (
-              <tr key={key}>
+              <tr key={key} className="text-center">
                 <td>{stand.position}</td>
                 <td>{stand.team.name}</td>
                 <td>{stand.playedGames}</td>
